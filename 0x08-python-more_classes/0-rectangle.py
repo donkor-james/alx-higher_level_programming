@@ -6,3 +6,4 @@
 class Rectangle:
 	"This is a rectangle"
 	pass
+
