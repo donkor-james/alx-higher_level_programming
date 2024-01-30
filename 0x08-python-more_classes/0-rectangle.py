@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-"This defines a class"
+"""This defines a class"""
 
 
 class Rectangle:
-	"This is a rectangle"
+	"""This is a rectangle"""
 	pass
 
