@@ -1,4 +1,4 @@
-# Javascript - Objects, Scope and and Closure
+# Javascript - Objects, Scopes and and Closures
 
 ## Function Prototypes :floppy_disk:
 
