@@ -1,3 +1,5 @@
+# Javascript - Objects, Scope and and Closure
+
 ## Function Prototypes :floppy_disk:
 
 Prototypes for functions written in this project:
