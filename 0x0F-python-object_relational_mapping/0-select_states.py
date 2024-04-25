@@ -12,11 +12,7 @@ def list_states (username, password, database):
         database: mysql database
     """
     # Connect to the MySQL server
-    conn = MySQLdb.connect(host='localhost',\
-            port=3306,\
-            user=username,\
-            passwd=password,\
-            db=database)
+    conn = MySQLdb.connect(host='localhost', port=3306, user=username, passwd=password, db=database)
     cursor = conn.cursor()
 
     # Execute the SQL query to fetch all states
@@ -40,4 +36,3 @@ if __name__ == '__main__':
     database = sys.argv[3]
 
     list_states(username, password, database)
-
