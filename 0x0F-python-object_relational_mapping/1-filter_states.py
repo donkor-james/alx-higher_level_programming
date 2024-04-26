@@ -5,7 +5,7 @@ import MySQLdb
 
 
 if __name__ == '__main__':
-	#get MySQL credentials from command
+	#get MySQL command
 	#connect to sql server
 	username = sys.args[1]
 	password = sys.args[2]
@@ -15,12 +15,13 @@ if __name__ == '__main__':
 	conn = MySQLdb.connect(host='localhost', port=3306, user=username, passwd=password, db=database)
 	cur = conn.cursor()
 
-	cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC")
+	cur.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY states.id")
 
 	rows = cur.fetchall()
 
 	for row in rows:
 		print(row)
 
+	cur.close()
 	conn.close()
 
