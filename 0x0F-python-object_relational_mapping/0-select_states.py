@@ -26,6 +26,7 @@ def list_states (username, password, database):
 		print(row)
 
 	# Close the database connection
+	cursor.close()
 	conn.close()
 
 
