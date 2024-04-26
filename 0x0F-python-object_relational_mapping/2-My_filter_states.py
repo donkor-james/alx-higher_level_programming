@@ -10,12 +10,13 @@ if __name__ == '__main__':
 	username = sys.argv[1]
 	password = sys.argv[2]
 	database = sys.argv[3]
+	state = sys.argv[4]
 
 	#Execute the sql queries
 	conn = MySQLdb.connect(host='localhost', port=3306, user=username, passwd=password, db=database)
 	cur = conn.cursor()
 
-	cur.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY states.id ORDER BY ASC")
+	cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY states.id ASC").format(state)
 
 	rows = cur.fetchall()
 
