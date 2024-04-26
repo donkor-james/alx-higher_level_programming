@@ -9,7 +9,7 @@ if __name__ == '__main__':
 	#connect to sql server
 	username = sys.arg[1]
 	password = sys.arg[2]
-	databas = sys.arg[3]
+	database = sys.arg[3]
 
 	#Execute the sql queries
 	conn = MySQLdb.connect(host='localhost', port=3306, user=username, passwd=password, db=database)
