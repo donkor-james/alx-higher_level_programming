@@ -5,11 +5,11 @@
 - of the X-Request-Id variable found in the header ofthe response.
 """
 import sys
-import urllib.request
+import requests
 
 if __name__ == "__main__":
     url = sys.argv[1]
-
-    request = urllib.request.Request(url)
-    with urllib.request.urlopen(request) as response:
-        print(dict(response.headers).get("X-Request-Id"))
+    payload = {'email': sys.argv[2]}
+    r = requests.post(url, data=payload)
+    r_dict = r.json()
+    print("Your email is: {}".format(r_dict['form']['email']))
