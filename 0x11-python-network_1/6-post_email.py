@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 """A script that:
 - takes in a URL,
 - sends a request to the URL and displays the value

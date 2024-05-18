@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 """Displays the X-Request-Id header variable of a request to a given URL
 """
 import sys
