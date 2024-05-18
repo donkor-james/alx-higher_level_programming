@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """A python script that
 - fetches https://alx-intranet.hbtn.io/status.
 - uses urlib package
