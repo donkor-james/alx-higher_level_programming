@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/python3
 """A script tha:
 - takes in a letter
 - sends POST request to http://0.0.0.0:5000/search_user
